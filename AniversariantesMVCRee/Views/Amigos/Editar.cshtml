@@ -1,0 +1,25 @@
+﻿@model Amigo
+<h2 style="font-weight: bold">Editar Amigo </h2>
+<div class="container-md" id="container-md" style="padding-top:15px"> 
+<form method="post" action="/Amigos/Editar"> 
+
+<div class="mb-3">
+  <label  for="exampleFormControlInput1" class="form-label">Id </label>
+  <input id="id" name="id" value="@Model.Id" class="form-control form-control-lg" type="text" placeholder="Id" aria-label=".form-control-lg example">
+</div>
+<div class="mb-3">
+  <label  for="exampleFormControlInput1" class="form-label">Nome </label>
+  <input id="nome" name="nome" value="@Model.Nome" class="form-control form-control-lg" type="text" placeholder="Nome" aria-label=".form-control-lg example">
+</div>
+<div class="mb-3">
+  <label class="form-label">Sobrenome</label>
+  <input id="sobrenome" name="sobrenome" value="@Model.Sobrenome" class="form-control form-control-lg" type="text" placeholder="Sobrenome" aria-label=".form-control-lg example">
+</div>
+<div class="mb-3" style="padding-bottom:40px;">
+  <label class="form-label">Nascimento </label>
+  <input id="nascimento" name="nascimento" value="@Model.Nascimento" class="form-control form-control-lg" type="date" placeholder="Nascimento" aria-label=".form-control-lg example">
+</div>
+
+<td style="padding-top:30px"> <input type="submit" class="btn btn-primary" style="width:100%;height:50px;" value="Cadastrar"/></td>
+</form>
+</div>

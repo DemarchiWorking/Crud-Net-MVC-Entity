@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2 style="font-weight: bold">Cadastrar Amigo </h2>
+<div class="container-md" id="container-md" style="padding-top:15px"> 
+<form method="post" action="/Amigos/Cadastro"> 
+<div class="mb-3">
+  <label  for="exampleFormControlInput1" class="form-label">Nome </label>
+  <input id="nome" name="nome" class="form-control form-control-lg" type="text" placeholder="Nome" aria-label=".form-control-lg example">
+</div>
+<div class="mb-3">
+  <label class="form-label">Sobrenome</label>
+  <input id="sobrenome" name="sobrenome" class="form-control form-control-lg" type="text" placeholder="Sobrenome" aria-label=".form-control-lg example">
+</div>
+<div class="mb-3" style="padding-bottom:40px;">
+  <label class="form-label">Nascimento </label>
+  <input id="nascimento" name="nascimento" class="form-control form-control-lg" type="date" placeholder="Nascimento" aria-label=".form-control-lg example">
+</div>
+
+<td style="padding-top:30px"> <input type="submit" class="btn btn-primary" style="width:100%;height:50px;" value="Cadastrar"/></td>
+</form>
+</div>
